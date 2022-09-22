@@ -12,7 +12,7 @@ __Time Complexity Analysis__ adalah suatu cara sederhana untuk mengetahui berapa
 
 __Big-O Notation adalah__ cara untuk mengkonversi keseluruhan langkah-langkah suatu algoritma kedalam bentuk Aljabar, yaitu dengan menghiraukan konstanta yang lebih kecil dan koefisien yang tidak berdampak besar terhadap keseluruhan kompleksitas permasalahan yang diselesaikan oleh algoritma tersebut.
 
-```Pseudocode
+```
 Regular       Big-O
 2             O(1)   --> It's just a constant number
 2n + 10       O(n)   --> n has the largest effect
@@ -26,7 +26,7 @@ Terdapat beberapa macam time complexity, diantaranya:
 * __O(1) — Constant Time__<br>
 __Constant Time artinya__ banyaknya input yang diberikan kepada sebuah algoritma, tidak akan mempengaruhi waktu proses (runtime) dari algoritma tersebut.
 
-```Pseudocode
+```
 let myArray = [1, 5, 0, 6, 1, 9, 9, 2];
 function getFirst(input){
    return input[0]; // selalu melakukan 1 langkah
@@ -34,7 +34,7 @@ function getFirst(input){
 let firstEl = getFirst(myArray);
 ```
 
-Contoh diatas, terdapat sebuah fungsi untuk mengambil elemen pertama dari sebuah input array. Kita bisa melihat bahwa berapapun jumlah array yang diberikan kepada fungsi tersebut, dia akan selalu melakukan 1 hal, yaitu mengambil elemen pertama. Itu artinya jumlah input yang diberikan tidak mempengaruhi waktu proses _(runtime)_= dari algoritma tersebut.
+Contoh diatas, terdapat sebuah fungsi untuk mengambil elemen pertama dari sebuah input array. Kita bisa melihat bahwa berapapun jumlah array yang diberikan kepada fungsi tersebut, dia akan selalu melakukan 1 hal, yaitu mengambil elemen pertama. Itu artinya jumlah input yang diberikan tidak mempengaruhi waktu proses _(runtime)_ dari algoritma tersebut.
 
 <center><img src="img/constant-time.png"></center>
 <center><i>Constant Time</i></center>
@@ -43,7 +43,7 @@ Contoh diatas, terdapat sebuah fungsi untuk mengambil elemen pertama dari sebuah
 * __O(log n) — Logarithmic Time__<br>
 __Logarithmic Time artinya__ ketika kita memberikan input sebesar n terhadap sebuah fungsi, jumlah tahapan yang dilakukan oleh fungsi tersebut berkurang berdasarkan suatu faktor. Salah satu contohnya adalah algoritma Binary Search. __Binary Search__ adalah algoritma yang kita gunakan dalam mencari posisi nilai dari suatu array dengan cara ‘mengeliminasi’ setengah dari array input untuk mempercepat proses pencarian.
 
-```Pseudocode
+```
 let sortedArray = [11, 24, 30, 43, 51, 61, 73, 86];
 function isExists(number, array){
     var midPoint = Math.floor( array.length /2 );
@@ -84,7 +84,7 @@ let maxNumber = getMax(myArray);
 
 Kita bisa melihat bahwa semakin banyak jumlah input yang diberikan, __maka waktu proses/runtime dari fungsi tersebut akan semakin besar.__
 
-<center><img src="img/Linear-time.png"></center>
+<center><img src="img/linear-time.png"></center>
 <center><i>Linear Time</i></center>
 
 * __O(n²) — Quadratic Time__<br>
@@ -106,6 +106,7 @@ function sort(input){
 }
 let sortedArray = sort(myArray);
 ```
+
 <center><img src="img/quadratic-time.png"></center>
 <center><i>Quadratic Time</i></center>
 
@@ -118,4 +119,3 @@ Exponential Time biasanya digunakan dalam situasi dimana kita tidak terlalu tahu
 Sebagai programmer, kita sering kali dihadapkan dengan adanya beberapa solusi untuk sebuah permasalahan dan kita dibingungkan dengan pertanyaan __“mana solusi yang lebih efisien?”__.
 
 Dengan memahami __Big-O Notation__, kita akan lebih mudah dalam melihat mana algoritma yang lebih efisien yang bisa kita gunakan untuk menyelesaikan permasalahan yang sedang dihadapi.
-

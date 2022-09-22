@@ -36,8 +36,8 @@ let firstEl = getFirst(myArray);
 
 Contoh diatas, terdapat sebuah fungsi untuk mengambil elemen pertama dari sebuah input array. Kita bisa melihat bahwa berapapun jumlah array yang diberikan kepada fungsi tersebut, dia akan selalu melakukan 1 hal, yaitu mengambil elemen pertama. Itu artinya jumlah input yang diberikan tidak mempengaruhi waktu proses _(runtime)_ dari algoritma tersebut.
 
-<center><img src="img/constant-time.png"></center>
-<center><i>Constant Time</i></center>
+<p align="center"><img src="img/constant-time.png"></p>
+<p align="center">Constant Time></p>
 
 
 * __O(log n) — Logarithmic Time__<br>
@@ -84,8 +84,8 @@ let maxNumber = getMax(myArray);
 
 Kita bisa melihat bahwa semakin banyak jumlah input yang diberikan, __maka waktu proses/runtime dari fungsi tersebut akan semakin besar.__
 
-<center><img src="img/linear-time.png"></center>
-<center><i>Linear Time</i></center>
+<p align="center"><img src="img/linear-time.png"></p>
+<p align="center">Linear Time></p>
 
 * __O(n²) — Quadratic Time__<br>
 Quadratic Time adalah ketika runtime dari fungsi kita adalah sebesar n^2, dimana n adalah jumlah input dari fungsi tersebut. Hal tersebut bisa terjadi karena kita menjalankan __fungsi linear didalam fungsi linear (n*n)__.
@@ -107,8 +107,8 @@ function sort(input){
 let sortedArray = sort(myArray);
 ```
 
-<center><img src="img/quadratic-time.png"></center>
-<center><i>Quadratic Time</i></center>
+<p align="center"><img src="img/quadratic-time.png"></p>
+<p align="center">Quadratic Time></p>
 
 
 * __O(2^n) — Exponential Time__<br>
